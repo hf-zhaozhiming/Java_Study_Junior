@@ -1,4 +1,4 @@
-package cn.map02;
+package cn.map03;
 
 public class Student {
 	private String name;
@@ -11,7 +11,7 @@ public class Student {
 	}
 
 	public Student() {
-		super(); 
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
