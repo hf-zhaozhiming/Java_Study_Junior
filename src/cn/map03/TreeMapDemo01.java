@@ -15,7 +15,6 @@ public class TreeMapDemo01 {
 	public static void main(String[] args) {
 		TreeMap<Student, String> hm = new TreeMap<Student, String>(
 				new Comparator<Student>() {
-
 					@Override
 					public int compare(Student o1, Student o2) {
 
