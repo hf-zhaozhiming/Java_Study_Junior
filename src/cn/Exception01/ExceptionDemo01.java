@@ -8,8 +8,10 @@ public class ExceptionDemo01 {
 		try {
 			System.out.println(a / b);
 			System.out.println(arr[3]);
-		} catch (Exception e) {
+		} catch (ArithmeticException e) {
 			System.out.println(e.toString());
+		} finally {
+			System.out.println("finally ÖÐµÄÓï¾ä!");
 		}
 
 		System.out.println("over!!!");
