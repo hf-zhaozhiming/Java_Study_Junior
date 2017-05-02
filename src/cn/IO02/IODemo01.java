@@ -12,12 +12,13 @@ public class IODemo01 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		FileOutputStream fos = new FileOutputStream("haha.txt");
+		FileOutputStream fos = new FileOutputStream("haha.txt", true);
 		byte[] b = "hello,io".getBytes();
 		fos.write(b);
 		fos.write("asdfasdfasdfa".getBytes());
 		fos.write("97".getBytes());
-		fos.close();
+		fos.write("\n".getBytes());
+		fos.write("µÚ¶þÐÐ".getBytes());
 
 		// byte[] b = "hello,io".getBytes();
 		// System.out.println(b);
