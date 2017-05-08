@@ -14,6 +14,7 @@ public class IODemo01 {
 
 		FileOutputStream fos = new FileOutputStream("haha.txt", true);
 		byte[] b = "hello,io".getBytes();
+		fos.write("\n".getBytes());
 		fos.write(b);
 		fos.write("asdfasdfasdfa".getBytes());
 		fos.write("97".getBytes());

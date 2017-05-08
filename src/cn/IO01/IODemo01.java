@@ -11,7 +11,6 @@ public class IODemo01 {
 		try {
 			file2.createNewFile();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
