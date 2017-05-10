@@ -36,8 +36,8 @@ public class FileCopyDemo02 {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("开始时间:" + sdf.format(date));
-		FileInputStream fis = new FileInputStream("haha.txt");
-		FileOutputStream fos = new FileOutputStream("haha2.txt");
+		FileInputStream fis = new FileInputStream("ue.txt");
+		FileOutputStream fos = new FileOutputStream("ue2.txt");
 		// 一般每次读取都是读取1024 或1024整数倍的字节数
 		byte[] by = new byte[1024];
 		int len = 0;
