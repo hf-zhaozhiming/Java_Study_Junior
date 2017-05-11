@@ -7,14 +7,18 @@ import java.io.InputStreamReader;
 public class InputStreamReaderDemo {
 	public static void main(String[] args) throws IOException {
 		InputStreamReader isr = new InputStreamReader(new FileInputStream(
-				"haha5.txt"), "UTF-8");
-		int by = 0;
-		int count = 0;
-		while ((by = isr.read()) != -1) {
-			System.out.print((char) by);
-			count++;
+				"CopyContrastDemo.java"));
+		// 方式1：
+		// int by = 0;
+		// while ((by = isr.read()) != -1) {
+		// System.out.print((char) by);
+		// }
+		// 方式2
+		char[] chs = new char[1024];
+		int len = 0;
+		while ((len = isr.read(chs)) != -1) {
+			System.out.print(new String(chs, 0, len));
 		}
-		System.out.println(count);
 		isr.close();
 	}
 }
