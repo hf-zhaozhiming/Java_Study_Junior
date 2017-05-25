@@ -15,6 +15,5 @@ public class CallableDemo {
 		int result2 = t2.get();
 		System.out.println(result1 + "----" + result2);
 		pool.shutdown();
-
 	}
 }
